@@ -1,0 +1,53 @@
+/* Styles de base */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sect1 {
+    margin: 10%;
+    padding-left: 20px;
+    border: 3px solid red;
+    border-radius: 8px;
+}
+
+.sect1__lorem {
+    color: blueviolet;
+}
+
+.sect1__lorem::before {
+    content: "👌";
+}
+
+.sect1__lorem::after {
+    content: "👍";
+}
+
+#sect1:hover{
+    background-color: blue;
+}
+
+h4[class="sect1__hh"] {
+    color: brown;
+}
+
+/* Media query pour les écrans plus petits (par exemple, moins de 768px de largeur) */
+@media screen and (max-width: 768px) {
+    #sect1 {
+        margin: 5%;
+    }
+}
+
+/* Media query pour les écrans très petits (par exemple, moins de 480px de largeur) */
+@media screen and (max-width: 480px) {
+    #sect1 {
+        margin: 2%;
+    }
+
+    .sect1__lorem {
+        font-size: 14px;
+    }
+
+    h4[class="sect1__hh"] {
+        font-size: 18px;
+    }
+}

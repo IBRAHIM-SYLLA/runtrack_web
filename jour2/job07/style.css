@@ -1,0 +1,35 @@
+:root {
+    --couleur-bouton: #3498db;
+    --couleur-boutonTexte: #e74c3c;
+    --couleur-texte: #333;
+    --couleur-hover: brown
+}
+
+/* Définition des variables pour la typographie */
+:root {
+    --police-principale: 'Helvetica', sans-serif;
+    --taille-texte: 16px;
+}
+
+/* Utilisation des variables */
+body {
+    font-family: var(--police-principale);
+    font-size: var(--taille-texte);
+    color: var(--couleur-texte);
+}
+
+.rotate-button {
+    padding: 10px 20px;
+    background-color: var(--couleur-bouton1);
+    color: var(--couleur-boutonTexte);
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    transition: background-color 0.3s ease;
+    transition: transform 1s;
+}
+
+.rotate-button:hover {
+    transform: rotate(360deg);
+    background-color: var(--couleur-hover);
+}

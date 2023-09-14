@@ -1,0 +1,43 @@
+/* Styles de base appliqués à l'ensemble du document */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour les éléments de section */
+#sect1 {
+    margin: 10%;
+    padding-left: 20px;
+    border: 3px solid red;
+    border-radius: 8px;
+    background-color: white; /* Couleur de fond par défaut */
+}
+
+/* Styles spécifiques aux liens */
+a {
+    color: blue; /* Couleur de lien par défaut */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Soulignement au survol des liens */
+}
+
+/* Styles pour les paragraphes */
+p {
+    color: blueviolet;
+}
+
+p::before {
+    content: "👌";
+}
+
+p::after {
+    content: "👍";
+}
+
+/* Styles pour les titres de section */
+h4[class="sect1__hh"] {
+    color: brown;
+}
